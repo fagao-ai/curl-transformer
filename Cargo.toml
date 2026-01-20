@@ -1,0 +1,12 @@
+[package]
+name = "curl_fixer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+arboard = "3.4"  # 用于操作剪贴板
+regex = "1.10"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+dirs = "5.0"  # 跨平台获取配置目录
+notify-rust = "4.11"  # 系统通知
