@@ -27,7 +27,8 @@ cargo run --release
 
 首次运行时，程序会自动创建配置文件并提示你编辑配置。配置文件位置：
 
-- **所有平台**: `~/.curl-transformer/config.toml`
+- **macOS / Linux**: `~/.ct/config.toml`
+- **Windows**: `%USERPROFILE%\.ct\config.toml`
 
 ### 3. 编辑配置文件
 
@@ -35,13 +36,13 @@ cargo run --release
 
 ```bash
 # 使用 vim
-vim ~/.curl-transformer/config.toml
+vim ~/.ct/config.toml
 
 # 或使用 VS Code
-code ~/.curl-transformer/config.toml
+code ~/.ct/config.toml
 
 # 或使用 nano
-nano ~/.curl-transformer/config.toml
+nano ~/.ct/config.toml
 ```
 
 编辑自动生成的配置文件，添加你的替换规则：
