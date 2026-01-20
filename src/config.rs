@@ -41,7 +41,7 @@ impl Config {
         let home_dir = dirs::home_dir()
             .ok_or_else(|| "无法获取用户主目录".to_string())?;
 
-        let app_config_dir = home_dir.join(".curl_fixer");
+        let app_config_dir = home_dir.join(".curl-transformer");
         let config_file = app_config_dir.join("config.toml");
 
         Ok(config_file)

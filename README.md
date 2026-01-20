@@ -1,4 +1,4 @@
-# cURL Fixer
+# curl-transformer
 
 自动监控剪贴板中的 cURL 命令，并根据配置文件自动替换主机地址。支持多平台（macOS、Linux、Windows）。
 
@@ -27,7 +27,7 @@ cargo run --release
 
 首次运行时，程序会自动创建配置文件并提示你编辑配置。配置文件位置：
 
-- **所有平台**: `~/.curl_fixer/config.toml`
+- **所有平台**: `~/.curl-transformer/config.toml`
 
 ### 3. 编辑配置文件
 
@@ -35,13 +35,13 @@ cargo run --release
 
 ```bash
 # 使用 vim
-vim ~/.curl_fixer/config.toml
+vim ~/.curl-transformer/config.toml
 
 # 或使用 VS Code
-code ~/.curl_fixer/config.toml
+code ~/.curl-transformer/config.toml
 
 # 或使用 nano
-nano ~/.curl_fixer/config.toml
+nano ~/.curl-transformer/config.toml
 ```
 
 编辑自动生成的配置文件，添加你的替换规则：

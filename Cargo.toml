@@ -1,7 +1,11 @@
 [package]
-name = "curl_fixer"
+name = "curl-transformer"
 version = "0.1.0"
 edition = "2024"
+
+[[bin]]
+name = "ct"
+path = "src/main.rs"
 
 [dependencies]
 arboard = "3.4"  # 用于操作剪贴板
