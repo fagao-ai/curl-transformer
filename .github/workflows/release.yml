@@ -67,12 +67,16 @@ jobs:
         with:
           path: artifacts
 
+      - name: List artifacts
+        run: ls -R artifacts
+
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          files: artifacts/*/*
+          files: |
+            ct-*/ct
+            ct-*/ct.exe
+          fail_on_unmatched_files: false
           generate_release_notes: true
-          draft: false
-          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
